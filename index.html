@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Es de Tela · Hecho a mano con mucho amor</title>
+<meta name="description" content="Fundas para libros, neceseres, estuches y nombres tejidos hechos a mano en Chile por Maca. Pedidos por WhatsApp y envíos por Blue Express.">
+<meta name="theme-color" content="#faf5ef">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Es de Tela">
+<meta property="og:locale" content="es_CL">
+<meta property="og:title" content="Es de Tela · Hecho a mano con mucho amor">
+<meta property="og:description" content="Fundas para libros, neceseres, estuches y nombres tejidos hechos a mano en Chile.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#inicio" class="logo" aria-label="Es de Tela, inicio"><img src="logo.png" alt="Es de Tela" width="760" height="120"></a>
+  <nav id="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#telas">Telas</a>
+    <a href="#como-comprar">Cómo comprar</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+</header>
+
+<main id="main">
+
+<!-- INICIO -->
+<section id="inicio">
+  <div class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-t="hero.eyebrow"></p>
+      <h1><span data-t="hero.title"></span><br><em data-t="hero.titleEm"></em></h1>
+      <p class="lead" data-t="hero.lead"></p>
+      <div class="btns">
+        <a class="btn" href="#trabajos" data-t="hero.button"></a>
+        <a class="btn ghost wa" target="_blank" rel="noopener">Escríbeme</a>
+      </div>
+    </div>
+    <div class="hero-img"><img id="heroImg" alt="" fetchpriority="high"></div>
+  </div>
+
+  <div class="block">
+    <div class="block-head">
+      <p class="eyebrow">Colecciones</p>
+      <h2>¿Qué estás buscando?</h2>
+    </div>
+    <div class="collections" id="collections"></div>
+  </div>
+
+  <div class="block soft">
+    <div class="block-head">
+      <p class="eyebrow">Así de simple</p>
+      <h2>Cómo comprar</h2>
+    </div>
+    <ol class="steps" id="homeSteps"></ol>
+    <div class="center"><a class="link" href="#como-comprar">Ver envíos, pagos y preguntas frecuentes →</a></div>
+  </div>
+</section>
+
+<!-- TRABAJOS -->
+<section id="trabajos" class="page">
+  <div class="block-head">
+    <p class="eyebrow" data-t="trabajos.eyebrow"></p>
+    <h1 data-t="trabajos.title"></h1>
+    <p class="muted" data-md="trabajos.intro"></p>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Filtrar por colección"></div>
+  <div class="grid" id="works"></div>
+</section>
+
+<!-- FICHA DE UN TRABAJO (#trabajo/<id>) -->
+<section id="trabajo" class="page" data-title="Trabajo">
+  <a class="back" href="#trabajos">← Volver a mis trabajos</a>
+  <div id="workView"></div>
+</section>
+
+<!-- TELAS -->
+<section id="telas" class="page">
+  <div class="block-head">
+    <p class="eyebrow" data-t="telas.eyebrow"></p>
+    <h1 data-t="telas.title"></h1>
+    <p class="muted" data-md="telas.intro"></p>
+  </div>
+  <div class="fabrics" id="fabrics"></div>
+</section>
+
+<!-- CÓMO COMPRAR -->
+<section id="como-comprar" class="page">
+  <div class="block-head">
+    <p class="eyebrow" data-t="comprar.eyebrow"></p>
+    <h1 data-t="comprar.title"></h1>
+    <p class="muted" data-md="comprar.intro"></p>
+  </div>
+  <ol class="steps" id="steps"></ol>
+  <div class="facts" id="facts"></div>
+  <h2 class="faq-title">Preguntas frecuentes</h2>
+  <div class="faq" id="faq"></div>
+  <div class="center"><a class="btn wa" target="_blank" rel="noopener">Escribir por WhatsApp</a></div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi" class="page">
+  <div class="about">
+    <img id="aboutImg" alt="" loading="lazy">
+    <div>
+      <p class="eyebrow" data-t="sobre.eyebrow"></p>
+      <h1 data-t="sobre.title"></h1>
+      <div class="prose" id="aboutText"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="page contact">
+  <p class="eyebrow" data-t="contacto.eyebrow"></p>
+  <h1 data-t="contacto.title"></h1>
+  <p class="muted" data-md="contacto.intro"></p>
+  <div class="btns center"><a class="btn wa" target="_blank" rel="noopener" data-t="contacto.button"></a></div>
+  <ul class="contact-list" id="contactList"></ul>
+</section>
+
+</main>
+
+<footer class="footer">
+  <img src="logo.png" alt="Es de Tela" width="760" height="120">
+  <p class="muted">Hecho a mano en Chile · <span id="year"></span></p>
+  <p class="small">Página desarrollada por <a href="https://benedettowebs.vercel.app/" target="_blank" rel="noopener">BenedettoWebs</a></p>
+</footer>
+
+<a class="wa-float wa" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.6-.3z"/></svg>
+</a>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
