@@ -152,7 +152,7 @@ $("#faq").innerHTML = C.comprar.faq.map(f => `<details><summary>${esc(f.q)}</sum
 // ---------- Contacto ----------
 const ig = String(C.general.instagram || "").replace(/^@/, "").trim();
 $("#contactList").innerHTML = [
-  waNumber && `<li><span>WhatsApp</span><a href="${waLink()}" target="_blank" rel="noopener">+${esc(waNumber)}</a></li>`,
+  waNumber && `<li><span>WhatsApp</span><a href="${waLink()}" target="_blank" rel="noopener">+${esc(waNumber.replace(/^(56)(9)(\d{4})(\d{4})$/, "$1 $2 $3 $4"))}</a></li>`,
   ig && `<li><span>Instagram</span><a href="https://www.instagram.com/${encodeURIComponent(ig)}/" target="_blank" rel="noopener">@${esc(ig)}</a></li>`,
   C.general.email && `<li><span>Correo</span><a href="mailto:${esc(C.general.email)}">${esc(C.general.email)}</a></li>`,
 ].filter(Boolean).join("");
