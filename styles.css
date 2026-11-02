@@ -180,4 +180,28 @@ main{min-height:70vh}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.18);transition:transform .2s}
 .wa-float:hover{transform:scale(1.06)}
 .wa-float svg{width:30px;height:30px;fill:#fff}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Animaciones */
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@keyframes unveil{from{transform:scale(1.08)}}
+@keyframes drop{from{opacity:0;transform:translateY(-8px)}}
+@keyframes pop{from{opacity:0;transform:scale(.4)}}
+/* Aparecer al hacer scroll: app.js marca los bloques con data-reveal y les pone .in al entrar en pantalla. */
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform .7s cubic-bezier(.2,.7,.2,1) var(--d,0s)}
+[data-reveal].in{opacity:1;transform:none}
+.hero-text>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) backwards}
+.hero-text>:nth-child(2){animation-delay:.1s}
+.hero-text>:nth-child(3){animation-delay:.2s}
+.hero-text>:nth-child(4){animation-delay:.3s}
+.hero-img{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) backwards}
+.hero-img img{animation:unveil 1.8s cubic-bezier(.2,.7,.2,1) backwards}
+.card-img{transition:transform .35s,box-shadow .35s}
+.card:hover .card-img,.collection:hover .card-img{transform:translateY(-4px);box-shadow:0 14px 28px rgba(46,38,36,.12)}
+.swatch img{transition:transform .6s}
+.fabric:hover .swatch img{transform:rotate(8deg) scale(1.06)}
+.steps span{transition:transform .3s}
+.steps li:hover span{transform:scale(1.12) rotate(-6deg)}
+.faq details[open]>:not(summary){animation:rise .35s ease-out}
+.nav.open #menu{animation:drop .25s ease-out}
+.wa-float{animation:pop .5s 1.2s cubic-bezier(.3,1.6,.5,1) backwards}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

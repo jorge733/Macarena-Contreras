@@ -122,7 +122,9 @@ wv.addEventListener("click", e => {
 function showPhoto(i) {
   const el = $(".work"), w = work(el.dataset.id), n = w.imgs.length;
   i = (i + n) % n; el.dataset.i = i;
-  $(".viewer img", el).src = w.imgs[i];
+  const img = $(".viewer img", el);
+  img.src = w.imgs[i];
+  if (!calm) img.animate([{ opacity: .2, transform: "scale(1.03)" }, { opacity: 1, transform: "none" }], { duration: 400, easing: "ease-out" });
   $$(".thumbs button", el).forEach((b, j) => j === i ? b.setAttribute("aria-current", "true") : b.removeAttribute("aria-current"));
 }
 let touchX = null;
@@ -175,6 +177,17 @@ $("#contactList").innerHTML = [
 // Sin número, el botón flotante no tiene adónde llevar.
 $(".wa-float").hidden = !waNumber;
 
+// ---------- Animaciones ----------
+// Los bloques aparecen suavemente al entrar en pantalla; los que entran juntos (tarjetas, pasos, telas…) van en cascada.
+const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const seen = !calm && "IntersectionObserver" in window && new IntersectionObserver(es => es.filter(e => e.isIntersecting).forEach((e, i) => {
+  e.target.style.setProperty("--d", `${Math.min(i, 8) * 80}ms`);
+  e.target.classList.add("in");
+  seen.unobserve(e.target);
+}), { rootMargin: "0px 0px -6% 0px" });
+const revealSel = ".block-head, .collection, .steps li, .card, .fabric, .fact, .faq-title, .faq details, .about > *, .contact-list li, .chips, .center, .gallery, .info";
+const reveal = root => seen && $$(revealSel, root).filter(el => !("reveal" in el.dataset)).forEach(el => { el.dataset.reveal = ""; seen.observe(el); });
+
 // ---------- Secciones: una a la vez, según el #ancla de la URL ----------
 // La ficha de cada trabajo vive en #trabajo/<id> y el filtro en #trabajos/<colección>; en el menú queda marcado «Trabajos».
 const sections = $$("#main > section");
@@ -196,7 +209,11 @@ function route() {
   });
   document.title = page === sections[0] ? baseTitle : `${w ? w.name : page.dataset.title || $(`#menu a[href="#${page.id}"]`).textContent} · Es de Tela`;
   // Cambiar de filtro no salta arriba: la persona sigue viendo los botones.
-  if (!(page.id === "trabajos" && document.body.dataset.page === "trabajos")) scrollTo({ top: 0, behavior: "instant" });
+  if (!(page.id === "trabajos" && document.body.dataset.page === "trabajos")) {
+    scrollTo({ top: 0, behavior: "instant" });
+    if (!calm) page.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 350, easing: "ease-out" });
+  }
+  reveal(page);
   document.body.dataset.page = page.id;
 }
 addEventListener("hashchange", route);
