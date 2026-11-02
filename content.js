@@ -2,7 +2,7 @@
 window.CONTENT = {
   "general": {
     "whatsapp": "56965360181",
-    "instagram": "",
+    "instagram": "esdetela.cl",
     "email": "",
     "production": "5 a 7 días hábiles"
   },
@@ -19,10 +19,26 @@ window.CONTENT = {
     "title": "Mis trabajos",
     "intro": "Estos son algunos trabajos que he hecho. La mayoría son **a pedido**: eliges el modelo y la tela, y lo hago para ti.",
     "categories": [
-      { "id": "lectores", "name": "Lectores", "desc": "Fundas acolchadas para tus libros y tu Kindle." },
-      { "id": "neceseres", "name": "Neceseres", "desc": "Para el maquillaje, los remedios o lo que quieras llevar." },
-      { "id": "estuches", "name": "Estuches", "desc": "Para lápices, con formas que dan ganas de usarlos." },
-      { "id": "nombres", "name": "Nombres infantiles", "desc": "Nombres tejidos para decorar la pieza de los niños." }
+      {
+        "id": "lectores",
+        "name": "Lectores",
+        "desc": "Fundas acolchadas para tus libros y tu Kindle."
+      },
+      {
+        "id": "neceseres",
+        "name": "Neceseres",
+        "desc": "Para el maquillaje, los remedios o lo que quieras llevar."
+      },
+      {
+        "id": "estuches",
+        "name": "Estuches",
+        "desc": "Para lápices, con formas que dan ganas de usarlos."
+      },
+      {
+        "id": "nombres",
+        "name": "Nombres infantiles",
+        "desc": "Nombres tejidos para decorar la pieza de los niños."
+      }
     ],
     "items": [
       {
@@ -31,7 +47,9 @@ window.CONTENT = {
         "category": "lectores",
         "availability": "pedido",
         "price": null,
-        "imgs": ["img/funda-toile.webp"],
+        "imgs": [
+          "img/funda-toile.webp"
+        ],
         "desc": "Funda acolchada con cierre, en tela toile de escenas románticas y un vuelo en el frente.\n\nSe puede hacer a la medida de tu libro o Kindle."
       },
       {
@@ -40,7 +58,9 @@ window.CONTENT = {
         "category": "lectores",
         "availability": "pedido",
         "price": null,
-        "imgs": ["img/funda-alicia.webp"],
+        "imgs": [
+          "img/funda-alicia.webp"
+        ],
         "desc": "Funda acolchada de retazos inspirada en Alicia en el país de las maravillas, con cierre de botón y elástico."
       },
       {
@@ -49,7 +69,9 @@ window.CONTENT = {
         "category": "neceseres",
         "availability": "pedido",
         "price": null,
-        "imgs": ["img/neceser-gatitos.webp"],
+        "imgs": [
+          "img/neceser-gatitos.webp"
+        ],
         "desc": "Neceser con asa de nudo, en tela de gatitos entre flores."
       },
       {
@@ -58,7 +80,9 @@ window.CONTENT = {
         "category": "estuches",
         "availability": "pedido",
         "price": null,
-        "imgs": ["img/estuche-ballena.webp"],
+        "imgs": [
+          "img/estuche-ballena.webp"
+        ],
         "desc": "Estuche para lápices con forma de ballena, en pana azul y crudo."
       },
       {
@@ -67,7 +91,9 @@ window.CONTENT = {
         "category": "nombres",
         "availability": "pedido",
         "price": null,
-        "imgs": ["img/nombre-maria.webp"],
+        "imgs": [
+          "img/nombre-maria.webp"
+        ],
         "desc": "Nombre tejido a mano con pompón, para colgar en la pieza. Me dices el nombre y el color."
       }
     ]
@@ -77,10 +103,30 @@ window.CONTENT = {
     "title": "Telas disponibles",
     "intro": "Estas son las telas que tengo ahora. Elige la que más te guste y me la indicas en tu mensaje.",
     "items": [
-      { "id": "toile", "name": "Toile rojo", "img": "img/tela-toile.webp", "available": true },
-      { "id": "gatitos", "name": "Gatitos y flores", "img": "img/tela-gatitos.webp", "available": true },
-      { "id": "corazones", "name": "Corazones", "img": "img/tela-corazones.webp", "available": true },
-      { "id": "pana-azul", "name": "Pana azul", "img": "img/tela-pana-azul.webp", "available": true }
+      {
+        "id": "toile",
+        "name": "Toile rojo",
+        "img": "img/tela-toile.webp",
+        "available": true
+      },
+      {
+        "id": "gatitos",
+        "name": "Gatitos y flores",
+        "img": "img/tela-gatitos.webp",
+        "available": true
+      },
+      {
+        "id": "corazones",
+        "name": "Corazones",
+        "img": "img/tela-corazones.webp",
+        "available": true
+      },
+      {
+        "id": "pana-azul",
+        "name": "Pana azul",
+        "img": "img/tela-pana-azul.webp",
+        "available": true
+      }
     ]
   },
   "upcycling": {
@@ -94,20 +140,50 @@ window.CONTENT = {
     "title": "Cómo comprar",
     "intro": "No hay carrito: me escribes, conversamos y te lo hago.",
     "steps": [
-      { "title": "Elige", "text": "Mira mis trabajos y las telas disponibles, y elige lo que te gusta." },
-      { "title": "Escríbeme", "text": "Toca «Lo quiero» o escríbeme por WhatsApp. Te confirmo el precio y el plazo." },
-      { "title": "Paga", "text": "Por transferencia o con mi link de pago (Webpay), con débito o crédito." },
-      { "title": "Recibe", "text": "Te lo envío por Blue Express a tu casa o a un punto Blue Express." }
+      {
+        "title": "Elige",
+        "text": "Mira mis trabajos y las telas disponibles, y elige lo que te gusta."
+      },
+      {
+        "title": "Escríbeme",
+        "text": "Toca «Lo quiero» o escríbeme por WhatsApp. Te confirmo el precio y el plazo."
+      },
+      {
+        "title": "Paga",
+        "text": "Por transferencia o con mi link de pago (Webpay), con débito o crédito."
+      },
+      {
+        "title": "Recibe",
+        "text": "Te lo envío por Blue Express a tu casa o a un punto Blue Express."
+      }
     ],
     "facts": [
-      { "title": "Plazo", "text": "Los productos a pedido están listos en **5 a 7 días hábiles**. Los de entrega inmediata salen al tiro." },
-      { "title": "Envío", "text": "Envío **por pagar** con Blue Express, a domicilio o a un punto Blue Express. Lo pagas al recibir." },
-      { "title": "Pago", "text": "**Transferencia** o **link de pago** Webpay (débito o crédito)." }
+      {
+        "title": "Plazo",
+        "text": "Los productos a pedido están listos en **5 a 7 días hábiles**. Los de entrega inmediata salen al tiro."
+      },
+      {
+        "title": "Envío",
+        "text": "Envío **por pagar** con Blue Express, a domicilio o a un punto Blue Express. Lo pagas al recibir."
+      },
+      {
+        "title": "Pago",
+        "text": "**Transferencia** o **link de pago** Webpay (débito o crédito)."
+      }
     ],
     "faq": [
-      { "q": "¿Puedo elegir otra tela?", "a": "¡Sí! Mira las telas disponibles y me dices cuál quieres. Si buscas algo especial, pregúntame." },
-      { "q": "¿Haces medidas especiales?", "a": "Sí, por ejemplo fundas a la medida de tu libro o Kindle. Escríbeme con las medidas." },
-      { "q": "¿Cuánto cuesta el envío?", "a": "Depende de la comuna y del tamaño. Lo pagas directo a Blue Express al recibir." }
+      {
+        "q": "¿Puedo elegir otra tela?",
+        "a": "¡Sí! Mira las telas disponibles y me dices cuál quieres. Si buscas algo especial, pregúntame."
+      },
+      {
+        "q": "¿Haces medidas especiales?",
+        "a": "Sí, por ejemplo fundas a la medida de tu libro o Kindle. Escríbeme con las medidas."
+      },
+      {
+        "q": "¿Cuánto cuesta el envío?",
+        "a": "Depende de la comuna y del tamaño. Lo pagas directo a Blue Express al recibir."
+      }
     ]
   },
   "sobre": {
