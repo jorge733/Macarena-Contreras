@@ -23,14 +23,16 @@
 
 <div class="app" id="app" hidden>
   <header class="bar">
-    <strong>Panel · Es de Tela</strong>
+    <a class="brand" href="/" target="_blank" rel="noopener" aria-label="Ver sitio"><img src="/logo.png" alt="Es de Tela"></a><span class="brand-sub">Panel</span>
     <span class="status" id="status" role="status"></span>
     <a class="ghost" href="/" target="_blank" rel="noopener">Ver sitio</a>
     <button class="ghost" id="logout" type="button">Salir</button>
     <button class="btn" id="save" type="button" disabled>Guardar y publicar</button>
   </header>
-  <nav class="tabs" id="tabs"></nav>
-  <main class="editor" id="editor"></main>
+  <div class="layout">
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Secciones del sitio"></nav>
+    <main class="editor" id="editor"></main>
+  </div>
 </div>
 
 <script src="/admin/admin.js"></script>

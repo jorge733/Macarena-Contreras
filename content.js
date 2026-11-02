@@ -1,7 +1,7 @@
 // Contenido del sitio. Se edita desde /admin (o a mano: lo que sigue al signo igual debe ser JSON válido).
 window.CONTENT = {
   "general": {
-    "whatsapp": "56949290005",
+    "whatsapp": "56965360181",
     "instagram": "",
     "email": "",
     "production": "5 a 7 días hábiles"

@@ -6,8 +6,10 @@ const head = [
   { k: "title", label: "Título" },
 ];
 const TABS = [
-  { key: "trabajos", title: "Trabajos", fields: [
-    { k: "items", label: "Trabajos", type: "list", noun: "trabajo", name: w => w.name, top: true,
+  { key: "trabajos", title: "Trabajos", href: "#trabajos",
+    desc: "Tu catálogo: cada trabajo con sus fotos, precio y colección.", fields: [
+    { k: "items", label: "Trabajos", type: "list", noun: "trabajo", name: w => w.name, top: true, fold: true,
+      thumb: w => w.imgs?.[0], meta: w => [content.trabajos.categories.find(c => c.id === w.category)?.name, w.availability === "inmediata" ? "Entrega inmediata" : "A pedido", money(w.price)].filter(Boolean).join(" · "),
       hint: "Se muestran en este orden. El primero de cada colección es la foto de esa colección en el inicio.",
       blank: () => ({ id: "t" + Date.now().toString(36), name: "Nuevo trabajo", category: content.trabajos.categories[0]?.id || "", availability: "pedido", price: null, imgs: [], desc: "" }),
       fields: [
@@ -27,8 +29,10 @@ const TABS = [
     ...head,
     { k: "intro", label: "Introducción", type: "textarea", hint: "Usa **negrita** para destacar." },
   ] },
-  { key: "telas", title: "Telas", fields: [
+  { key: "telas", title: "Telas", href: "#telas",
+    desc: "Las telas que tienes ahora. Se ven en la página de Telas y al elegir un trabajo.", fields: [
     { k: "items", label: "Telas", type: "list", noun: "tela", name: f => f.name, row: true, top: true,
+      thumb: f => f.img, meta: f => f.available ? "Disponible" : "Agotada",
       hint: "Las telas disponibles también se pueden elegir en la ficha de cada trabajo. Una tela agotada se ve en gris y no se puede elegir.",
       blank: () => ({ id: "f" + Date.now().toString(36), name: "Nueva tela", img: "", available: true }),
       fields: [
@@ -39,13 +43,15 @@ const TABS = [
     ...head,
     { k: "intro", label: "Introducción", type: "textarea" },
   ] },
-  { key: "general", title: "Datos de contacto", fields: [
+  { key: "general", title: "Datos de contacto", href: "#contacto",
+    desc: "Tu WhatsApp, redes y el plazo de los trabajos a pedido.", fields: [
     { k: "whatsapp", label: "Número de WhatsApp", hint: "Con el código de país, ej.: 56912345678. Es adonde llegan los botones «Lo quiero» y «Escríbeme»." },
     { k: "instagram", label: "Instagram (sin @)", hint: "Se muestra en Contacto. Déjalo vacío para no mostrarlo." },
     { k: "email", label: "Correo", hint: "Se muestra en Contacto. Déjalo vacío para no mostrarlo." },
     { k: "production", label: "Plazo de los trabajos a pedido", hint: "Se muestra en cada trabajo a pedido, ej.: «A pedido · 5 a 7 días hábiles»." },
   ] },
-  { key: "hero", title: "Inicio", fields: [
+  { key: "hero", title: "Inicio", href: "#inicio",
+    desc: "Lo primero que ve la gente al entrar a la página.", fields: [
     { k: "eyebrow", label: "Etiqueta pequeña" },
     { k: "title", label: "Título (primera línea)" },
     { k: "titleEm", label: "Título (segunda línea, en cursiva)" },
@@ -53,8 +59,10 @@ const TABS = [
     { k: "button", label: "Texto del botón a los trabajos" },
     { k: "image", label: "Foto principal", type: "image" },
   ] },
-  { key: "upcycling", title: "Upcycling", fields: [
-    { k: "items", label: "Piezas únicas", type: "list", noun: "pieza", name: u => u.name, top: true,
+  { key: "upcycling", title: "Upcycling", href: "#upcycling",
+    desc: "Piezas únicas hechas con tela de prendas rescatadas, cada una con su foto y precio.", fields: [
+    { k: "items", label: "Piezas únicas", type: "list", noun: "pieza", name: u => u.name, top: true, fold: true,
+      thumb: u => u.img, meta: u => [money(u.price), u.sold ? "Vendida" : "Disponible"].join(" · "),
       hint: "Cada pieza es única: cuando la vendas, marca «Vendida» (se ve en gris y sin botón) o elimínala.",
       blank: () => ({ id: "u" + Date.now().toString(36), name: "Nueva pieza", price: null, img: "", desc: "", sold: false }),
       fields: [
@@ -67,7 +75,8 @@ const TABS = [
     ...head,
     { k: "intro", label: "Introducción", type: "textarea", hint: "Usa **negrita** para destacar." },
   ] },
-  { key: "comprar", title: "Cómo comprar", fields: [...head,
+  { key: "comprar", title: "Cómo comprar", href: "#como-comprar",
+    desc: "Los pasos para comprarte, el plazo, el envío, el pago y las preguntas frecuentes.", fields: [...head,
     { k: "intro", label: "Introducción", type: "textarea" },
     { k: "steps", label: "Pasos", type: "list", noun: "paso", name: s => s.title, row: true,
       hint: "También se muestran en el inicio.",
@@ -76,15 +85,17 @@ const TABS = [
     { k: "facts", label: "Plazo, envío y pago", type: "list", noun: "dato", name: f => f.title, row: true,
       blank: () => ({ title: "", text: "" }),
       fields: [{ k: "title", label: "Título" }, { k: "text", label: "Texto", type: "textarea", rows: 3, hint: MD }] },
-    { k: "faq", label: "Preguntas frecuentes", type: "list", noun: "pregunta", name: f => f.q,
+    { k: "faq", label: "Preguntas frecuentes", type: "list", noun: "pregunta", name: f => f.q, fold: true,
       blank: () => ({ q: "", a: "" }),
       fields: [{ k: "q", label: "Pregunta" }, { k: "a", label: "Respuesta", type: "textarea", rows: 3, hint: MD }] },
   ] },
-  { key: "sobre", title: "Sobre mí", fields: [...head,
+  { key: "sobre", title: "Sobre mí", href: "#sobre-mi",
+    desc: "Tu historia y tu foto.", fields: [...head,
     { k: "text", label: "Texto", type: "textarea", rows: 8, hint: MD },
     { k: "image", label: "Foto", type: "image" },
   ] },
-  { key: "contacto", title: "Contacto", fields: [...head,
+  { key: "contacto", title: "Contacto", href: "#contacto",
+    desc: "Los textos de la página de Contacto. Tus datos se cambian en «Datos de contacto».", fields: [...head,
     { k: "intro", label: "Texto", type: "textarea" },
     { k: "button", label: "Texto del botón de WhatsApp" },
   ] },
@@ -94,6 +105,8 @@ const TABS = [
 const $ = s => document.querySelector(s);
 let password = "", content = null, baseSha = "", dirty = false, tab = TABS[0].key;
 const uploads = {}; // ruta → { sha, preview } de fotos subidas que aún no se guardan
+const opened = new WeakSet(); // fichas plegables que están abiertas
+const money = n => n ? Number(n).toLocaleString("es-CL", { style: "currency", currency: "CLP", maximumFractionDigits: 0 }) : "Precio a consultar";
 
 const h = (tag, props = {}, ...kids) => {
   const el = Object.assign(document.createElement(tag), props);
@@ -109,7 +122,7 @@ async function api(action, args = {}) {
 }
 
 function setStatus(msg, kind = "") { const s = $("#status"); s.textContent = msg; s.className = `status ${kind}`; }
-function touch() { dirty = true; $("#save").disabled = false; setStatus("Cambios sin guardar"); }
+function touch() { dirty = true; $("#save").disabled = false; setStatus("Cambios sin guardar", "pending"); }
 
 // ---------- Fotos ----------
 // Se guardan en el repositorio (img/) junto con content.js.
@@ -184,26 +197,40 @@ function field(f, obj, rerender) {
               h("button", { type: "button", className: "icon", textContent: "→", title: "Mover después", disabled: i === v.length - 1, onclick: () => move(i, 1) })))),
           picker("+ Agregar fotos", true, ps => { v.push(...ps); touch(); rerender(); })));
     }
+    // Las listas largas (trabajos, piezas, preguntas) se pliegan: cerradas muestran foto, nombre y un resumen.
     case "list": {
       const box = h("div", { className: "list" });
       const draw = () => box.replaceChildren(
-        h("span", { className: "list-title", textContent: f.label }), hint,
+        h("div", { className: "list-head" }, h("h3", { className: "list-title", textContent: f.label }), hint),
+        ...(v.length ? [] : [h("p", { className: "empty", textContent: "Todavía no hay nada aquí." })]),
         ...v.map((item, i) => {
           const move = d => { v.splice(i + d, 0, v.splice(i, 1)[0]); touch(); draw(); };
+          const open = !f.fold || opened.has(item);
           const title = h("strong", { textContent: f.name(item) || "(sin nombre)" });
+          const meta = f.meta && h("span", { className: "meta", textContent: f.meta(item) });
+          const src = f.thumb?.(item);
+          const label = [f.thumb && h("span", { className: "thumb" }, src ? h("img", { src: srcOf(src), alt: "" }) : null),
+            h("span", { className: "names" }, title, meta)];
+          const toggle = () => { opened.has(item) ? opened.delete(item) : opened.add(item); draw(); };
           const body = h("div", { className: f.row ? "row" : "list" });
-          const drawBody = () => body.replaceChildren(...f.fields.map(sub => field(sub, item, drawBody)));
-          drawBody();
-          body.addEventListener("input", () => (title.textContent = f.name(item) || "…"));
-          return h("div", { className: "item" },
-            h("div", { className: "item-head" }, title,
+          if (open) body.replaceChildren(...f.fields.map(sub => field(sub, item, draw)));
+          const refresh = () => { title.textContent = f.name(item) || "…"; if (meta) meta.textContent = f.meta(item); };
+          body.addEventListener("input", refresh); body.addEventListener("change", refresh);
+          return h("div", { className: `item${f.fold ? " fold" : ""}${open ? " open" : ""}` },
+            h("div", { className: "item-head" },
+              f.fold ? h("button", { type: "button", className: "summary", ariaExpanded: String(open), onclick: toggle }, label, h("span", { className: "chev", ariaHidden: "true" }))
+                     : h("div", { className: "summary" }, label),
               h("button", { type: "button", className: "icon", textContent: "↑", title: "Subir", disabled: i === 0, onclick: () => move(-1) }),
               h("button", { type: "button", className: "icon", textContent: "↓", title: "Bajar", disabled: i === v.length - 1, onclick: () => move(1) }),
               h("button", { type: "button", className: "icon del", textContent: "✕", title: `Eliminar ${f.noun}`,
                 onclick: () => { if (confirm(`¿Eliminar ${f.noun} «${f.name(item) || "sin nombre"}»?`)) { v.splice(i, 1); touch(); draw(); } } })),
-            body);
+            open ? body : null);
         }),
-        h("button", { type: "button", className: "add", textContent: `+ Agregar ${f.noun}`, onclick: () => { f.top ? v.unshift(f.blank()) : v.push(f.blank()); touch(); draw(); } }));
+        h("button", { type: "button", className: "add", textContent: `+ Agregar ${f.noun}`, onclick: () => {
+          const item = f.blank(); opened.add(item);
+          f.top ? v.unshift(item) : v.push(item); touch(); draw();
+          [...box.querySelectorAll(".item")].at(f.top ? 0 : -1)?.scrollIntoView({ behavior: "smooth", block: "center" });
+        } }));
       draw();
       return box;
     }
@@ -215,8 +242,24 @@ function field(f, obj, rerender) {
 function render() {
   $("#tabs").replaceChildren(...TABS.map(t => h("button", { type: "button", role: "tab", textContent: t.title, ariaSelected: String(t.key === tab),
     onclick: () => { tab = t.key; render(); scrollTo(0, 0); } })));
-  const t = TABS.find(t => t.key === tab);
-  const draw = () => $("#editor").replaceChildren(h("h2", { textContent: t.title }), ...t.fields.map(f => field(f, content[t.key], draw)));
+  const t = TABS.find(t => t.key === tab), obj = content[t.key] ||= {};
+  const hasLists = t.fields.some(f => f.type === "list");
+  // Los campos sueltos (títulos, textos, fotos) van juntos en una tarjeta; cada lista va aparte.
+  const draw = () => {
+    const groups = [];
+    for (const f of t.fields) {
+      if (f.type === "list") { groups.push(field(f, obj, draw)); continue; }
+      let card = groups.at(-1);
+      if (!card?.classList.contains("card")) groups.push(card = h("div", { className: "card" }, hasLists && h("h3", { className: "list-title", textContent: "Textos de la sección" })));
+      card.append(field(f, obj, draw));
+    }
+    $("#editor").replaceChildren(
+      h("div", { className: "tab-head" },
+        h("h2", { textContent: t.title }),
+        t.href && h("a", { className: "ghost view", href: "/" + t.href, target: "_blank", rel: "noopener", textContent: "Ver en el sitio ↗" }),
+        t.desc && h("p", { className: "lead", textContent: t.desc })),
+      ...groups);
+  };
   draw();
 }
 
