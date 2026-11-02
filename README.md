@@ -13,13 +13,14 @@ Se muestra una a la vez según el `#` de la dirección:
 - `#inicio`: bienvenida, colecciones y pasos para comprar.
 - `#trabajos` (y `#trabajos/<colección>` para filtrar): catálogo.
 - `#trabajo/<id>`: ficha de un trabajo, con selector de tela y botón «Lo quiero».
+- `#upcycling`: piezas únicas hechas con tela de prendas rescatadas (foto, precio y «Lo quiero»; las vendidas quedan en gris).
 - `#telas`, `#como-comprar`, `#sobre-mi`, `#contacto`.
 
 Mientras no haya número de WhatsApp en *Datos de contacto*, los botones de WhatsApp llevan a Contacto y el botón flotante no aparece.
 
 ## Panel de edición (`/admin`)
 
-En `/admin` Maca entra con una contraseña y edita el contenido sin tocar código: trabajos y colecciones, telas (disponible o agotada), datos de contacto, inicio, cómo comprar, sobre mí y contacto. Al apretar **Guardar y publicar**, la función `api/admin.js` guarda `content.js` (y las fotos nuevas, en `img/`) como un commit en GitHub, y Vercel vuelve a publicar el sitio en 1 o 2 minutos. Las fotos se achican en el navegador (WebP, máx. 1600 px) antes de subirse.
+En `/admin` Maca entra con una contraseña y edita el contenido sin tocar código: trabajos y colecciones, telas (disponible o agotada), piezas upcycling (vendida o no), datos de contacto, inicio, cómo comprar, sobre mí y contacto. Al apretar **Guardar y publicar**, la función `api/admin.js` guarda `content.js` (y las fotos nuevas, en `img/`) como un commit en GitHub, y Vercel vuelve a publicar el sitio en 1 o 2 minutos. Las fotos se achican en el navegador (WebP, máx. 1600 px) antes de subirse.
 
 Configuración (una sola vez):
 

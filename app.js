@@ -142,6 +142,22 @@ $("#fabrics").innerHTML = fabrics.length ? fabrics.map(f => `
   </div>`).join("") : `<p class="muted">Pronto subiré las telas disponibles.</p>`;
 $$(".wa-fabric").forEach(a => setWa(a, `Hola Maca! Me gusta la tela «${a.dataset.name}». ¿Qué me puedes hacer con ella?`));
 
+// ---------- Upcycling ----------
+// Piezas únicas hechas con tela de prendas rescatadas: una foto, precio y un «Lo quiero»; las vendidas quedan en gris.
+const upItems = C.upcycling?.items || [];
+$("#upcyclingItems").innerHTML = upItems.length ? upItems.map((u, i) => `
+  <div class="card up${u.sold ? " out" : ""}">
+    <div class="card-img">${u.img ? `<img ${i > 3 ? 'loading="lazy" ' : ""}src="${esc(u.img)}" alt="${esc(u.name)}">` : ""}</div>
+    <div class="card-body">
+      <h3>${esc(u.name)}</h3>
+      <p class="price">${priceText(u)}</p>
+      ${u.sold ? `<span class="badge">Vendida</span>` : `<span class="badge now">Pieza única</span>`}
+      ${String(u.desc || "").trim() ? `<div class="prose small muted">${md(u.desc)}</div>` : ""}
+      ${u.sold ? "" : `<a class="link wa-up" data-name="${esc(u.name)}">Lo quiero →</a>`}
+    </div>
+  </div>`).join("") : `<p class="muted">Pronto subiré piezas únicas aquí.</p>`;
+$$(".wa-up").forEach(a => setWa(a, `Hola Maca! Me interesa la pieza upcycling «${a.dataset.name}», que vi en tu página. ¿Todavía está disponible?`));
+
 // ---------- Cómo comprar ----------
 const stepsHtml = C.comprar.steps.map((s, i) => `<li><span>${i + 1}</span><h3>${esc(s.title)}</h3><p>${inline(s.text)}</p></li>`).join("");
 $("#steps").innerHTML = stepsHtml;

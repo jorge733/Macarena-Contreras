@@ -83,6 +83,12 @@ window.CONTENT = {
       { "id": "pana-azul", "name": "Pana azul", "img": "img/tela-pana-azul.webp", "available": true }
     ]
   },
+  "upcycling": {
+    "eyebrow": "Piezas únicas",
+    "title": "Productos upcycling",
+    "intro": "Fundas y estuches hechos con tela de prendas rescatadas de la feria. Cada uno es un **diseño único e irrepetible**: cuando se vende, no vuelve.",
+    "items": []
+  },
   "comprar": {
     "eyebrow": "Paso a paso",
     "title": "Cómo comprar",

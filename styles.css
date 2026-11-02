@@ -138,6 +138,11 @@ main{min-height:70vh}
 .fabric.out img{filter:grayscale(.8);opacity:.55}
 @media (max-width:520px){.fabrics{grid-template-columns:1fr 1fr}}
 
+/* Upcycling */
+.card.up .card-body .prose{margin-top:.2rem}
+.card.up.out img{filter:grayscale(.8);opacity:.55}
+.grid>p.muted{grid-column:1/-1;text-align:center}
+
 /* Cómo comprar */
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.5rem}
 .fact{border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}
