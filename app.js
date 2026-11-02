@@ -169,9 +169,11 @@ $("#faq").innerHTML = C.comprar.faq.map(f => `<details><summary>${esc(f.q)}</sum
 
 // ---------- Contacto ----------
 const ig = String(C.general.instagram || "").replace(/^@/, "").trim();
+const tt = String(C.general.tiktok || "").replace(/^@/, "").trim();
 $("#contactList").innerHTML = [
   waNumber && `<li><span>WhatsApp</span><a href="${waLink()}" target="_blank" rel="noopener">+${esc(waNumber.replace(/^(56)(9)(\d{4})(\d{4})$/, "$1 $2 $3 $4"))}</a></li>`,
   ig && `<li><span>Instagram</span><a href="https://www.instagram.com/${encodeURIComponent(ig)}/" target="_blank" rel="noopener">@${esc(ig)}</a></li>`,
+  tt && `<li><span>TikTok</span><a href="https://www.tiktok.com/@${encodeURIComponent(tt)}" target="_blank" rel="noopener">@${esc(tt)}</a></li>`,
   C.general.email && `<li><span>Correo</span><a href="mailto:${esc(C.general.email)}">${esc(C.general.email)}</a></li>`,
 ].filter(Boolean).join("");
 // Sin número, el botón flotante no tiene adónde llevar.

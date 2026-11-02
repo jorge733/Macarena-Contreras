@@ -3,6 +3,7 @@ window.CONTENT = {
   "general": {
     "whatsapp": "56965360181",
     "instagram": "esdetela.cl",
+    "tiktok": "esdetela",
     "email": "",
     "production": "5 a 7 días hábiles"
   },

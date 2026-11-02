@@ -47,6 +47,7 @@ const TABS = [
     desc: "Tu WhatsApp, redes y el plazo de los trabajos a pedido.", fields: [
     { k: "whatsapp", label: "Número de WhatsApp", hint: "Con el código de país, ej.: 56912345678. Es adonde llegan los botones «Lo quiero» y «Escríbeme»." },
     { k: "instagram", label: "Instagram (sin @)", hint: "Se muestra en Contacto. Déjalo vacío para no mostrarlo." },
+    { k: "tiktok", label: "TikTok (sin @)", hint: "Se muestra en Contacto. Déjalo vacío para no mostrarlo." },
     { k: "email", label: "Correo", hint: "Se muestra en Contacto. Déjalo vacío para no mostrarlo." },
     { k: "production", label: "Plazo de los trabajos a pedido", hint: "Se muestra en cada trabajo a pedido, ej.: «A pedido · 5 a 7 días hábiles»." },
   ] },
