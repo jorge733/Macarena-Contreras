@@ -36,4 +36,3 @@ Configuración (una sola vez):
 - Instagram y correo (*Datos de contacto*).
 - Precios de referencia (hoy todos dicen «Precio a consultar»).
 - Fotos reales de sus telas: las de ahora son recortes de las fotos de sus trabajos.
-- Conectar su dominio en Vercel (*Settings → Domains*).
