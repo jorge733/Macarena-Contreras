@@ -158,6 +158,11 @@ $("#upcyclingItems").innerHTML = upItems.length ? upItems.map((u, i) => `
       ${u.sold ? "" : `<a class="link wa-up" data-name="${esc(u.name)}">Lo quiero →</a>`}
     </div>
   </div>`).join("") : `<p class="muted">Pronto subiré piezas únicas aquí.</p>`;
+// Bloque de upcycling en el inicio (foto + texto). Sin foto propia usa la de la primera pieza; sin ninguna, queda solo el texto.
+const upHomeImg = C.upcycling?.homeImage || upItems[0]?.img;
+upHomeImg ? ($("#upHomeImg").src = upHomeImg) : $(".feature").classList.add("no-img");
+$("#upHomeText").innerHTML = md(C.upcycling?.homeText);
+setWa($(".wa-uphome"), "Hola Maca! Vi tus piezas upcycling en tu página y quería hacerte una consulta.");
 $$(".wa-up").forEach(a => setWa(a, `Hola Maca! Me interesa la pieza upcycling «${a.dataset.name}», que vi en tu página. ¿Todavía está disponible?`));
 
 // ---------- Cómo comprar ----------
@@ -187,7 +192,7 @@ const seen = !calm && "IntersectionObserver" in window && new IntersectionObserv
   e.target.classList.add("in");
   seen.unobserve(e.target);
 }), { rootMargin: "0px 0px -6% 0px" });
-const revealSel = ".block-head, .collection, .steps li, .card, .fabric, .fact, .faq-title, .faq details, .about > *, .contact-list li, .chips, .center, .gallery, .info";
+const revealSel = ".block-head, .collection, .steps li, .card, .fabric, .fact, .faq-title, .faq details, .about > *, .feature > *, .contact-list li, .chips, .center, .gallery, .info";
 const reveal = root => seen && $$(revealSel, root).filter(el => !("reveal" in el.dataset)).forEach(el => { el.dataset.reveal = ""; seen.observe(el); });
 
 // ---------- Secciones: una a la vez, según el #ancla de la URL ----------

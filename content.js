@@ -134,6 +134,11 @@ window.CONTENT = {
     "eyebrow": "Piezas únicas",
     "title": "Productos upcycling",
     "intro": "Fundas y estuches hechos con tela de prendas rescatadas de la feria. Cada uno es un **diseño único e irrepetible**: cuando se vende, no vuelve.",
+    "homeEyebrow": "Upcycling",
+    "homeTitle": "Telas con segunda vida",
+    "homeText": "Rescato prendas en desuso de la feria y las transformo en fundas, estuches y neceseres. Así le doy una nueva vida a la tela y ayudo a disminuir la contaminación textil.\n\nCada pieza es **única e irrepetible**: cuando se vende, no vuelve.",
+    "homeButton": "Ver piezas únicas",
+    "homeImage": "img/funda-alicia.webp",
     "items": []
   },
   "comprar": {

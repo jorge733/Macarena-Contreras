@@ -147,6 +147,16 @@ main{min-height:70vh}
 .card.up.out img{filter:grayscale(.8);opacity:.55}
 .grid>p.muted{grid-column:1/-1;text-align:center}
 
+/* Bloque destacado (upcycling en el inicio): foto a la izquierda, texto a la derecha */
+.feature{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.feature-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--cream)}
+.feature-img img{width:100%;height:100%;object-fit:cover}
+.feature .squiggle{display:block;width:150px;height:14px;color:var(--rose);margin:.6rem 0 1.2rem}
+.feature .prose{color:var(--muted);font-size:1.05rem;max-width:34rem;margin-bottom:1.6rem}
+.feature.no-img{grid-template-columns:1fr;max-width:640px;margin:0 auto}
+.feature.no-img .feature-img{display:none}
+@media (max-width:760px){.feature{grid-template-columns:1fr}.feature-img{aspect-ratio:4/3}}
+
 /* Cómo comprar */
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2.5rem}
 .fact{border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem}

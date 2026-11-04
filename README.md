@@ -10,7 +10,7 @@ Todos los textos, trabajos, telas, fotos y datos de contacto están en `content.
 
 Se muestra una a la vez según el `#` de la dirección:
 
-- `#inicio`: bienvenida, colecciones y pasos para comprar.
+- `#inicio`: bienvenida, colecciones, bloque de upcycling (foto + texto, lleva a `#upcycling`) y pasos para comprar.
 - `#trabajos` (y `#trabajos/<colección>` para filtrar): catálogo.
 - `#trabajo/<id>`: ficha de un trabajo, con selector de tela y botón «Lo quiero».
 - `#upcycling`: piezas únicas hechas con tela de prendas rescatadas (foto, precio y «Lo quiero»; las vendidas quedan en gris).
