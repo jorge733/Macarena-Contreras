@@ -11,7 +11,7 @@ window.CONTENT = {
     "eyebrow": "Hecho a mano en Chile",
     "title": "Cosas lindas,",
     "titleEm": "hechas de tela",
-    "lead": "Hola, soy Maca. Hago fundas para libros, neceseres, estuches y nombres tejidos, uno por uno y con mucho amor.",
+    "lead": "Hola! Soy Macarena, la creadora de Es de Tela, un pequeño emprendimiento que crea productos, hechos a mano y con mucho amor,  Gracias por tu visita, espero que encuentres algo que sea perfecto para ti.",
     "button": "Ver mis trabajos",
     "image": "img/estuche-ballena.webp"
   },
