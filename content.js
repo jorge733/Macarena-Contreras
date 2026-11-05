@@ -120,15 +120,21 @@ window.CONTENT = {
         "available": true
       },
       {
-        "id": "fmw2wuibl",
-        "name": "Flor menta | lona",
-        "img": "img/subida-mw2wupe0-befo.webp",
+        "id": "fmw2wwqr7",
+        "name": "Snoopy | solo para fundas kindle y tablet",
+        "img": "img/subida-mw2wx9hx-hwpv.webp",
         "available": true
       },
       {
         "id": "fmw2wslhr",
         "name": "peach | impermeable",
         "img": "img/subida-mw2wtbs5-li7a.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wuibl",
+        "name": "Flor menta | lona",
+        "img": "img/subida-mw2wupe0-befo.webp",
         "available": true
       },
       {
