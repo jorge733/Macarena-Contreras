@@ -114,38 +114,86 @@ window.CONTENT = {
     "intro": "Estas son las telas que tengo ahora. Elige la que más te guste y me la indicas en tu mensaje.",
     "items": [
       {
+        "id": "fmw2wqdpg",
+        "name": "Snoopy | impermeable",
+        "img": "img/subida-mw2wr2cm-s2ny.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wuibl",
+        "name": "Flor menta | lona",
+        "img": "img/subida-mw2wupe0-befo.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wslhr",
+        "name": "peach | impermeable",
+        "img": "img/subida-mw2wtbs5-li7a.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wtoyg",
+        "name": "Flor celeste | lona",
+        "img": "img/subida-mw2wu4zx-iah1.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wrgny",
+        "name": "Cactus | lona",
+        "img": "img/subida-mw2wrsc0-pfb1.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wpl57",
+        "name": "Flamenco | lona",
+        "img": "img/subida-mw2wpvar-qquc.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2woe16",
+        "name": "Otoño | lona",
+        "img": "img/subida-mw2wox3b-vlw1.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wmrm0",
+        "name": "Puppys | lona",
+        "img": "img/subida-mw2wn627-bhzl.webp",
+        "available": true
+      },
+      {
         "id": "fmw2wlkow",
-        "name": "Bridgerton verde",
+        "name": "Bridgerton verde | lona",
         "img": "img/subida-mw2wm6ne-s6cx.webp",
         "available": true
       },
       {
         "id": "fmw2wk6it",
-        "name": "Bridgerton Beige",
+        "name": "Bridgerton Beige | lona",
         "img": "img/subida-mw2wkw8m-cu49.webp",
         "available": true
       },
       {
         "id": "pana-azul",
-        "name": "Bridgerton negro",
+        "name": "Bridgerton negro | lona",
         "img": "img/subida-mw2wjmx9-as7x.webp",
         "available": true
       },
       {
         "id": "toile",
-        "name": "Bridgerton rojo",
+        "name": "Bridgerton rojo | lona",
         "img": "img/tela-toile.webp",
         "available": true
       },
       {
         "id": "gatitos",
-        "name": "Gatitos y flores",
+        "name": "Gatitos y flores | impermeable",
         "img": "img/tela-gatitos.webp",
         "available": true
       },
       {
         "id": "corazones",
-        "name": "Pink Print",
+        "name": "Pink Print | impermeable",
         "img": "img/subida-mw2wi3od-h8w5.webp",
         "available": true
       }
