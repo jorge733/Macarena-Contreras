@@ -217,8 +217,8 @@ window.CONTENT = {
     "items": [
       {
         "id": "umw2x4nks",
-        "name": "Nueva pieza",
-        "price": 13,
+        "name": "Funda Kindle | paz",
+        "price": 12900,
         "img": "img/subida-mw2x53aw-q1rl.webp",
         "desc": "Funda para modelo Kindle o Kobo, medidas 15 x 19 cms, creado con prenda rescatada, disponible solo 1.",
         "sold": false
