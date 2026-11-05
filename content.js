@@ -114,6 +114,24 @@ window.CONTENT = {
     "intro": "Estas son las telas que tengo ahora. Elige la que más te guste y me la indicas en tu mensaje.",
     "items": [
       {
+        "id": "fmw2wlkow",
+        "name": "Bridgerton verde",
+        "img": "img/subida-mw2wm6ne-s6cx.webp",
+        "available": true
+      },
+      {
+        "id": "fmw2wk6it",
+        "name": "Bridgerton Beige",
+        "img": "img/subida-mw2wkw8m-cu49.webp",
+        "available": true
+      },
+      {
+        "id": "pana-azul",
+        "name": "Bridgerton negro",
+        "img": "img/subida-mw2wjmx9-as7x.webp",
+        "available": true
+      },
+      {
         "id": "toile",
         "name": "Bridgerton rojo",
         "img": "img/tela-toile.webp",
@@ -129,12 +147,6 @@ window.CONTENT = {
         "id": "corazones",
         "name": "Pink Print",
         "img": "img/subida-mw2wi3od-h8w5.webp",
-        "available": true
-      },
-      {
-        "id": "pana-azul",
-        "name": "Pana azul",
-        "img": "img/tela-pana-azul.webp",
         "available": true
       }
     ]
