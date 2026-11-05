@@ -214,7 +214,16 @@ window.CONTENT = {
     "homeText": "Rescato prendas en desuso de la feria y las transformo en fundas, estuches y neceseres. Así le doy una nueva vida a la tela y ayudo a disminuir la contaminación textil.\n\nCada pieza es **única e irrepetible**: cuando se vende, no vuelve.",
     "homeButton": "Ver piezas únicas",
     "homeImage": "img/subida-mw2x2z92-7k8e.webp",
-    "items": []
+    "items": [
+      {
+        "id": "umw2x4nks",
+        "name": "Nueva pieza",
+        "price": 13,
+        "img": "img/subida-mw2x53aw-q1rl.webp",
+        "desc": "Funda para modelo Kindle o Kobo, medidas 15 x 19 cms, creado con prenda rescatada, disponible solo 1.",
+        "sold": false
+      }
+    ]
   },
   "comprar": {
     "eyebrow": "Paso a paso",
