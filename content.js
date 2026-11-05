@@ -43,6 +43,15 @@ window.CONTENT = {
     ],
     "items": [
       {
+        "id": "tmw2wfjxk",
+        "name": "Nuevo trabajo",
+        "category": "lectores",
+        "availability": "pedido",
+        "price": null,
+        "imgs": [],
+        "desc": ""
+      },
+      {
         "id": "funda-toile",
         "name": "Funda para libro Toile",
         "category": "lectores",
@@ -106,7 +115,7 @@ window.CONTENT = {
     "items": [
       {
         "id": "toile",
-        "name": "Toile rojo",
+        "name": "Bridgerton rojo",
         "img": "img/tela-toile.webp",
         "available": true
       },
@@ -118,8 +127,8 @@ window.CONTENT = {
       },
       {
         "id": "corazones",
-        "name": "Corazones",
-        "img": "img/tela-corazones.webp",
+        "name": "Pink Print",
+        "img": "img/subida-mw2wi3od-h8w5.webp",
         "available": true
       },
       {
