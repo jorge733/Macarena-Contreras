@@ -207,6 +207,14 @@ window.CONTENT = {
     "homeImage": "img/subida-mw2x2z92-7k8e.webp",
     "items": [
       {
+        "id": "umw57y2d6",
+        "name": "Maxi Candy | ",
+        "price": 12000,
+        "img": "img/subida-mw57yz88-ujat.webp",
+        "desc": "Maxi Candy con prenda reciclada (vestido) tamaño amplio de 18x 20 cms aprox. ",
+        "sold": false
+      },
+      {
         "id": "umw2x4nks",
         "name": "Funda Kindle | paz",
         "price": 12900,
