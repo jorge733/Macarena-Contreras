@@ -207,16 +207,8 @@ window.CONTENT = {
     "homeImage": "img/subida-mw2x2z92-7k8e.webp",
     "items": [
       {
-        "id": "umw5kx89m",
-        "name": "Nueva pieza",
-        "price": null,
-        "img": "",
-        "desc": "",
-        "sold": false
-      },
-      {
         "id": "umw57y2d6",
-        "name": "Maxi Candy | ",
+        "name": "Maxi Candy | vestido",
         "price": 14000,
         "img": "img/subida-mw57yz88-ujat.webp",
         "desc": "Maxi Candy con prenda reciclada (vestido) tamaño amplio de 18x 20 cms aprox. ",
