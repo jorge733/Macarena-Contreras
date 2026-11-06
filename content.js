@@ -207,9 +207,17 @@ window.CONTENT = {
     "homeImage": "img/subida-mw2x2z92-7k8e.webp",
     "items": [
       {
+        "id": "umw5kx89m",
+        "name": "Nueva pieza",
+        "price": null,
+        "img": "",
+        "desc": "",
+        "sold": false
+      },
+      {
         "id": "umw57y2d6",
         "name": "Maxi Candy | ",
-        "price": 12000,
+        "price": 14000,
         "img": "img/subida-mw57yz88-ujat.webp",
         "desc": "Maxi Candy con prenda reciclada (vestido) tamaño amplio de 18x 20 cms aprox. ",
         "sold": false
@@ -221,6 +229,14 @@ window.CONTENT = {
         "img": "img/subida-mw2x53aw-q1rl.webp",
         "desc": "Funda para modelo Kindle o Kobo, medidas 15 x 19 cms, creado con prenda rescatada, disponible solo 1.",
         "sold": false
+      },
+      {
+        "id": "umw5ktoue",
+        "name": "Maxi Candy | short",
+        "price": 14000,
+        "img": "img/subida-mw5kvci4-lyil.webp",
+        "desc": "estuche neceser amplio ideal apra guardar tus cosas personales como cremas de peinas, cepillos, etc. modelo confeccionado con short de mujer.",
+        "sold": true
       }
     ]
   },
