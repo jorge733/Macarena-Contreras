@@ -43,59 +43,54 @@ window.CONTENT = {
     ],
     "items": [
       {
-        "id": "funda-toile",
-        "name": "Funda para libro Toile",
+        "id": "tmw5ldo4k",
+        "name": "Funda Kindle & Kobo cele flor",
         "category": "lectores",
-        "availability": "pedido",
-        "price": null,
+        "availability": "inmediata",
+        "price": 12900,
         "imgs": [
-          "img/funda-toile.webp"
+          "img/subida-mw5lk4ym-2k5r.webp",
+          "img/subida-mw5lk4jm-su6w.webp"
         ],
-        "desc": "Funda acolchada con cierre, en tela toile de escenas románticas y un vuelo en el frente.\n\nSe puede hacer a la medida de tu libro o Kindle."
+        "desc": "funda acolchada para modelos kindle-Kobo, acolchado, con un modelo coqueto para que lo lleves a todas partes."
       },
       {
-        "id": "funda-alicia",
-        "name": "Funda para libro Alicia",
+        "id": "funda-toile",
+        "name": "Funda para Kindle&Kobo con vuelos",
         "category": "lectores",
         "availability": "pedido",
         "price": null,
         "imgs": [
-          "img/funda-alicia.webp"
+          "img/funda-toile.webp",
+          "img/subida-mw5l5thr-iyhc.webp"
         ],
-        "desc": "Funda acolchada de retazos inspirada en Alicia en el país de las maravillas, con cierre de botón y elástico."
+        "desc": "Funda acolchada con cierre + vuelos\n\nSe puede hacer a la medida de Kindle o Kobo."
       },
       {
         "id": "neceser-gatitos",
-        "name": "Neceser gatitos y flores",
+        "name": "Maxy Candy | Cat lady",
         "category": "neceseres",
         "availability": "pedido",
-        "price": null,
+        "price": 14000,
         "imgs": [
           "img/neceser-gatitos.webp"
         ],
         "desc": "Neceser con asa de nudo, en tela de gatitos entre flores."
       },
       {
-        "id": "estuche-ballena",
-        "name": "Estuche ballena",
-        "category": "estuches",
-        "availability": "pedido",
-        "price": null,
-        "imgs": [
-          "img/estuche-ballena.webp"
-        ],
-        "desc": "Estuche para lápices con forma de ballena, en pana azul y crudo."
-      },
-      {
         "id": "nombre-maria",
         "name": "Nombre tejido",
         "category": "nombres",
         "availability": "pedido",
-        "price": null,
+        "price": 0,
         "imgs": [
-          "img/nombre-maria.webp"
+          "img/nombre-maria.webp",
+          "img/subida-mw5lpzp2-nfz5.webp",
+          "img/subida-mw5lpzop-e8yl.webp",
+          "img/subida-mw5lpzoo-880h.webp",
+          "img/subida-mw5lqhir-vylu.webp"
         ],
-        "desc": "Nombre tejido a mano con pompón, para colgar en la pieza. Me dices el nombre y el color."
+        "desc": "Nombre tejido a mano con pompón, para colgar en la pieza. Se cotiza por nombre, disponible mas de 20 colores-"
       }
     ]
   },
