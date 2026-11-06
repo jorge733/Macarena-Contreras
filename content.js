@@ -223,7 +223,7 @@ window.CONTENT = {
     "steps": [
       {
         "title": "Elige",
-        "text": "Mira mis trabajos y las telas disponibles, y elige lo que te gusta."
+        "text": "Mira mis trabajos, las telas disponibles, y elige lo que te gusta."
       },
       {
         "title": "Escríbeme",
@@ -235,7 +235,7 @@ window.CONTENT = {
       },
       {
         "title": "Recibe",
-        "text": "Te lo envío por Blue Express a tu casa o a un punto Blue Express."
+        "text": "envíos Blue Express a tu casa o a un punto Blue Express."
       }
     ],
     "facts": [
@@ -255,15 +255,19 @@ window.CONTENT = {
     "faq": [
       {
         "q": "¿Puedo elegir otra tela?",
-        "a": "¡Sí! Mira las telas disponibles y me dices cuál quieres. Si buscas algo especial, pregúntame."
+        "a": "¡Sí! tengo un amplio catalogo de telas, pero si no te gusta ninguno ademas tengo diseños para sublimar aplica para productos de tamaño maximo 50 cms. Considerar que la tela será impermeable.\n\n"
       },
       {
         "q": "¿Haces medidas especiales?",
-        "a": "Sí, por ejemplo fundas a la medida de tu libro o Kindle. Escríbeme con las medidas."
+        "a": "Sí, por ejemplo fundas a la medida de tu libro o Kindle, Tablet, Ipad y fundas de notebook."
       },
       {
         "q": "¿Cuánto cuesta el envío?",
-        "a": "Depende de la comuna y del tamaño. Lo pagas directo a Blue Express al recibir."
+        "a": "Depende de la comuna y del tamaño. Lo pagas directo a Blue Express al recibir. Si es mas comodo para ti dejarlo pagado, te cotizo en tiempo real el valor del envio asi puede pagar el valos del producto textil + envio. "
+      },
+      {
+        "q": "Llego mi producto pero no lo quiero",
+        "a": "Todos los productos a pedido no tienen devolucion de dinero a excepcion de fallas tecnicas como cierres, botones, etc, se realizara cambio de producto o reparación."
       }
     ]
   },
