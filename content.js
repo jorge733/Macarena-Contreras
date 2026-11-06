@@ -43,15 +43,6 @@ window.CONTENT = {
     ],
     "items": [
       {
-        "id": "tmw2wfjxk",
-        "name": "Nuevo trabajo",
-        "category": "lectores",
-        "availability": "pedido",
-        "price": null,
-        "imgs": [],
-        "desc": ""
-      },
-      {
         "id": "funda-toile",
         "name": "Funda para libro Toile",
         "category": "lectores",
@@ -279,7 +270,7 @@ window.CONTENT = {
   "sobre": {
     "eyebrow": "Quién soy",
     "title": "Hola, soy Maca",
-    "text": "Soy la creadora de Es de Tela, un pequeño emprendimiento que crea productos hechos a mano y con mucho amor.\n\nCada pieza la corto, la coso y la termino yo, así que ninguna es igual a otra. Gracias por tu visita: espero que encuentres algo perfecto para ti.",
+    "text": "\nAquí encontrarás accesorios y creaciones textiles diseñadas y confeccionadas por mí, combinando telas, colores e ideas para dar vida a piezas únicas que acompañen tu día a día. Cada creación nace de mi gusto por imaginar, reutilizar y transformar materiales en algo especial.\n\n Gracias por tu visita: espero que encuentres algo perfecto para ti.",
     "image": "img/neceser-gatitos.webp"
   },
   "contacto": {
