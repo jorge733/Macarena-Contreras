@@ -201,9 +201,9 @@ window.CONTENT = {
     "title": "Productos upcycling",
     "intro": "Fundas y estuches hechos con tela de prendas rescatadas. Cada uno es un **diseño único e irrepetible**: cuando se vende, no vuelve.",
     "homeEyebrow": "Upcycling",
-    "homeTitle": "Telas con segunda vida",
-    "homeText": "Rescato prendas en desuso de la feria y las transformo en fundas, estuches y neceseres. Así le doy una nueva vida a la tela y ayudo a disminuir la contaminación textil.\n\nCada pieza es **única e irrepetible**: cuando se vende, no vuelve.",
-    "homeButton": "Ver piezas únicas",
+    "homeTitle": "Diseño textil con una segunda vida",
+    "homeText": "Rescato prendas en desuso y las transformo en nuevos accesorios textiles. Cada pieza tiene su propia historia y es única. \n\nCada pieza es **única e irrepetible**: cuando se vende, no vuelve.",
+    "homeButton": "Ver piezas upcycling",
     "homeImage": "img/subida-mw2x2z92-7k8e.webp",
     "items": [
       {
