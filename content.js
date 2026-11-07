@@ -43,15 +43,6 @@ window.CONTENT = {
     ],
     "items": [
       {
-        "id": "tmw5p0kck",
-        "name": "Nuevo trabajo",
-        "category": "lectores",
-        "availability": "pedido",
-        "price": null,
-        "imgs": [],
-        "desc": ""
-      },
-      {
         "id": "funda-toile",
         "name": "Funda para Kindle&Kobo con vuelos",
         "category": "lectores",
