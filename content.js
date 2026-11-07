@@ -309,7 +309,7 @@ window.CONTENT = {
     "eyebrow": "Quién soy",
     "title": "Hola, soy Maca",
     "text": "\nAquí encontrarás accesorios y creaciones textiles diseñadas y confeccionadas por mí, combinando telas, colores e ideas para dar vida a piezas únicas que acompañen tu día a día. Cada creación nace de mi gusto por imaginar, reutilizar y transformar materiales en algo especial.\n\n Gracias por tu visita: espero que encuentres algo perfecto para ti.",
-    "image": "img/neceser-gatitos.webp"
+    "image": "img/subida-mw5oeczt-2twu.webp"
   },
   "contacto": {
     "eyebrow": "Contacto",
