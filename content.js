@@ -123,6 +123,12 @@ window.CONTENT = {
     "intro": "Estas son las telas que tengo ahora. Elige la que más te guste y me la indicas en tu mensaje.",
     "items": [
       {
+        "id": "fmw6tpn70",
+        "name": "My Little pony ",
+        "img": "img/subida-mw6trlq0-e9ip.webp",
+        "available": true
+      },
+      {
         "id": "fmw6tmaeg",
         "name": "Army BTS | solo para fundas kindle y tablet",
         "img": "img/subida-mw6tn9eu-pvco.webp",
@@ -132,6 +138,12 @@ window.CONTENT = {
         "id": "fmw6tkofa",
         "name": "Frida | solo para fundas Kindle y tablet",
         "img": "img/subida-mw6tl3mh-sxoi.webp",
+        "available": true
+      },
+      {
+        "id": "fmw6ts9gu",
+        "name": "Cariñositos",
+        "img": "img/subida-mw6tsjf0-tacm.webp",
         "available": true
       },
       {
