@@ -43,18 +43,6 @@ window.CONTENT = {
     ],
     "items": [
       {
-        "id": "tmw5ldo4k",
-        "name": "Funda Kindle & Kobo cele flor",
-        "category": "lectores",
-        "availability": "inmediata",
-        "price": 12900,
-        "imgs": [
-          "img/subida-mw5lk4ym-2k5r.webp",
-          "img/subida-mw5lk4jm-su6w.webp"
-        ],
-        "desc": "funda acolchada para modelos kindle-Kobo, acolchado, con un modelo coqueto para que lo lleves a todas partes."
-      },
-      {
         "id": "funda-toile",
         "name": "Funda para Kindle&Kobo con vuelos",
         "category": "lectores",
@@ -65,6 +53,41 @@ window.CONTENT = {
           "img/subida-mw5l5thr-iyhc.webp"
         ],
         "desc": "Funda acolchada con cierre + vuelos\n\nSe puede hacer a la medida de Kindle o Kobo."
+      },
+      {
+        "id": "tmw5nbyvn",
+        "name": "Funda Kindle&Kobo Cat Lady II",
+        "category": "lectores",
+        "availability": "inmediata",
+        "price": 12900,
+        "imgs": [
+          "img/subida-mw5ncumt-t8eq.webp"
+        ],
+        "desc": ""
+      },
+      {
+        "id": "tmw5ltd19",
+        "name": "Funda Kindle&Kobo Cat Lady",
+        "category": "lectores",
+        "availability": "inmediata",
+        "price": 12900,
+        "imgs": [
+          "img/subida-mw5lu298-l638.webp",
+          "img/subida-mw5ltzwl-sdqp.webp"
+        ],
+        "desc": ""
+      },
+      {
+        "id": "tmw5ldo4k",
+        "name": "Funda Kindle & Kobo cele flor",
+        "category": "lectores",
+        "availability": "inmediata",
+        "price": 12900,
+        "imgs": [
+          "img/subida-mw5lk4ym-2k5r.webp",
+          "img/subida-mw5lk4jm-su6w.webp"
+        ],
+        "desc": "funda acolchada para modelos kindle-Kobo, acolchado, con un modelo coqueto para que lo lleves a todas partes."
       },
       {
         "id": "neceser-gatitos",
