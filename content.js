@@ -11,7 +11,7 @@ window.CONTENT = {
     "eyebrow": "Hecho a mano en Chile",
     "title": "De la creatividad",
     "titleEm": "A la tela ",
-    "lead": "¡Bienvenidos a Es de Tela! ♡\nUn espacio donde la creatividad se transforma en tela. Encuentra fundas, estuches, bolsos y piezas textiles hechas con dedicación, disponibles en stock limitado y también a pedido. \nSE HACEN ENVIOS FUERA DE CHILE | Worldwide shipping | Enviamos para todo o mundo Expédition dans le monde entier | Weltweiter Versand | Spedizioni in tutto il mondo | 世界中へ発送しています | Dünyanın her yerine gönderim | ",
+    "lead": "¡Bienvenidos a Es de Tela! ♡\nUn espacio donde la creatividad se transforma en tela. Encuentra fundas, estuches, bolsos y piezas textiles hechas con dedicación, disponibles en stock limitado y también a pedido. \nSE HACEN ENVIOS FUERA DE CHILE | Worldwide shipping. ",
     "button": "Ver mis trabajos",
     "image": "img/subida-mw585f5h-uosi.webp"
   },
