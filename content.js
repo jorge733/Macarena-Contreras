@@ -326,6 +326,10 @@ window.CONTENT = {
       {
         "q": "Llego mi producto pero no lo quiero",
         "a": "Todos los productos a pedido no tienen devolucion de dinero a excepcion de fallas tecnicas como cierres, botones, etc, se realizara cambio de producto o reparación."
+      },
+      {
+        "q": "Hacen envios internacionales y como puedo pagar?",
+        "a": "Si!, hago envíos a todo el mundo y puedes pagar a tráves de Paypal, para eso debes escribir a mi whatsApp y te indico toda la informacion según en que pais estas ubicada."
       }
     ]
   },
