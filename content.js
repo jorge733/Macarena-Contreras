@@ -39,9 +39,33 @@ window.CONTENT = {
         "id": "nombres",
         "name": "Nombres infantiles",
         "desc": "Nombres tejidos para decorar la pieza de los niños."
+      },
+      {
+        "id": "cmwc09c06",
+        "name": "Porta Joyero de viaje",
+        "desc": "lleva tus tesoros a todos lados"
+      },
+      {
+        "id": "cmwc09uty",
+        "name": "Nueva colección",
+        "desc": ""
       }
     ],
     "items": [
+      {
+        "id": "tmwbzyq9a",
+        "name": "Porta Jouero",
+        "category": "lectores",
+        "availability": "pedido",
+        "price": null,
+        "imgs": [
+          "img/subida-mwc07ynp-jg3j.webp",
+          "img/subida-mwc08km9-ggqk.webp",
+          "img/subida-mwc08lfh-2jp4.webp",
+          "img/subida-mwc08kbl-77w8.webp"
+        ],
+        "desc": ""
+      },
       {
         "id": "funda-toile",
         "name": "Funda para Kindle&Kobo con vuelos",
