@@ -44,27 +44,22 @@ window.CONTENT = {
         "id": "cmwc09c06",
         "name": "Porta Joyero de viaje",
         "desc": "lleva tus tesoros a todos lados"
-      },
-      {
-        "id": "cmwc09uty",
-        "name": "Nueva colección",
-        "desc": ""
       }
     ],
     "items": [
       {
         "id": "tmwbzyq9a",
-        "name": "Porta Jouero",
-        "category": "lectores",
-        "availability": "pedido",
-        "price": null,
+        "name": "Porta Joyero",
+        "category": "cmwc09c06",
+        "availability": "inmediata",
+        "price": 10900,
         "imgs": [
           "img/subida-mwc07ynp-jg3j.webp",
           "img/subida-mwc08km9-ggqk.webp",
           "img/subida-mwc08lfh-2jp4.webp",
           "img/subida-mwc08kbl-77w8.webp"
         ],
-        "desc": ""
+        "desc": "Lleva tus tesoros a todas partes con este practico porta joyero."
       },
       {
         "id": "funda-toile",
