@@ -41,7 +41,7 @@ em{font-style:italic;color:var(--rose)}
 /* Encabezado */
 .nav{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:.9rem var(--gutter);background:rgba(250,245,239,.92);backdrop-filter:blur(10px);transition:box-shadow .2s}
 .nav.scrolled{box-shadow:0 1px 0 var(--line)}
-.logo img{width:auto;height:30px}
+.logo img{width:auto;height:46px}
 #menu{display:flex;gap:.3rem;margin-left:auto}
 #menu a{text-decoration:none;font-weight:600;font-size:.95rem;padding:.45rem .8rem;border-radius:999px;color:var(--muted)}
 #menu a:hover{color:var(--ink)}
@@ -189,7 +189,7 @@ main{min-height:70vh}
 
 /* Pie y WhatsApp flotante */
 .footer{text-align:center;padding:3rem var(--gutter) 6rem;border-top:1px solid var(--line);display:grid;gap:.5rem;justify-items:center}
-.footer img{height:26px;width:auto;margin-bottom:.4rem}
+.footer img{height:44px;width:auto;margin-bottom:.4rem}
 .footer a{color:var(--muted)}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.18);transition:transform .2s}
 .wa-float:hover{transform:scale(1.06)}

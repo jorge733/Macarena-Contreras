@@ -1,6 +1,6 @@
-# Es de Tela
+# Pajarita
 
-Vitrina de los trabajos hechos a mano de Maca (Macarena Contreras). Sitio estático (HTML/CSS/JS) publicado en Vercel.
+Vitrina de los trabajos hechos a mano de Maca (Macarena Contreras). Sitio estático (HTML/CSS/JS) publicado en Vercel, en https://www.pajarita.cl (antes «Es de Tela»).
 
 No es una tienda: no hay carrito ni pago en la página. Cada trabajo tiene un botón **«Lo quiero»** que abre WhatsApp con el nombre del trabajo (y la tela, si se eligió una) ya escrito. El pago se hace por transferencia o link de pago y el envío por Blue Express, como se explica en *Cómo comprar*.
 

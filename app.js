@@ -214,7 +214,7 @@ function route() {
     a.classList.toggle("active", on);
     on ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current");
   });
-  document.title = page === sections[0] ? baseTitle : `${w ? w.name : page.dataset.title || $(`#menu a[href="#${page.id}"]`).textContent} · Es de Tela`;
+  document.title = page === sections[0] ? baseTitle : `${w ? w.name : page.dataset.title || $(`#menu a[href="#${page.id}"]`).textContent} · Pajarita`;
   // Cambiar de filtro no salta arriba: la persona sigue viendo los botones.
   if (!(page.id === "trabajos" && document.body.dataset.page === "trabajos")) {
     scrollTo({ top: 0, behavior: "instant" });
