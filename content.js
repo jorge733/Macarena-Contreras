@@ -9,8 +9,8 @@ window.CONTENT = {
   },
   "hero": {
     "eyebrow": "Hecho a mano en Chile",
-    "title": "De la creatividad",
-    "titleEm": "A la tela ",
+    "title": "una pajarita",
+    "titleEm": "con muchas ideas",
     "lead": "¡Bienvenidos a Pajarita! ♡\nUn espacio donde la creatividad se transforma en tela. Encuentra fundas, estuches, bolsos y piezas textiles hechas con dedicación, disponibles en stock limitado y también a pedido. Envios a todo Chile y extranjero.",
     "button": "Ver mis trabajos",
     "image": "img/subida-mw585f5h-uosi.webp"
