@@ -13,7 +13,7 @@ window.CONTENT = {
     "titleEm": "con muchas ideas",
     "lead": "¡Bienvenidos a Pajarita! ♡\nUn espacio donde la creatividad se transforma en tela. Encuentra fundas, estuches, bolsos y piezas textiles hechas con dedicación, disponibles en stock limitado y también a pedido. Envios a todo Chile y extranjero.",
     "button": "Ver mis trabajos",
-    "image": "img/subida-mwnuxig9-1ye3.webp"
+    "image": "img/subida-mwnv00p9-et25.webp"
   },
   "trabajos": {
     "eyebrow": "Catálogo",
