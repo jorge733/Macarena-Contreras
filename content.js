@@ -2,9 +2,9 @@
 window.CONTENT = {
   "general": {
     "whatsapp": "56965360181",
-    "instagram": "esdetela.cl",
+    "instagram": "pajarita.cl",
     "tiktok": "esdetela",
-    "email": "",
+    "email": "pedidospajarita@gmail.com",
     "production": "5 a 7 días hábiles"
   },
   "hero": {
