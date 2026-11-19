@@ -142,8 +142,62 @@ window.CONTENT = {
     "intro": "Estas son las telas que tengo ahora. Elige la que más te guste y me la indicas en tu mensaje.",
     "items": [
       {
+        "id": "fmwmupzlp",
+        "name": "Jardin velvet | impermeable",
+        "img": "img/subida-mwmuq9le-fqb8.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmup3g4",
+        "name": "selva | impermeable",
+        "img": "img/subida-mwmupegj-6qkl.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmuokfv",
+        "name": "loros | impermeable",
+        "img": "img/subida-mwmuou0n-64qo.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmunsur",
+        "name": "Conejos | impermeable",
+        "img": "img/subida-mwmuo936-suqp.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmun0kh",
+        "name": "flores de seda | imeprmeable",
+        "img": "img/subida-mwmunick-gt4q.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmujo5q",
+        "name": "orange | impermeable",
+        "img": "img/subida-mwmuk18q-e818.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmujaf2",
+        "name": "flroes 1 | impermeable",
+        "img": "img/subida-mwmujhh3-hk5x.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmui7vw",
+        "name": "flores 2 | impermeable",
+        "img": "img/subida-mwmuj0wb-tiba.webp",
+        "available": true
+      },
+      {
+        "id": "fmwmuh0fw",
+        "name": "selva rosa | impermeable",
+        "img": "img/subida-mwmuhq4b-fkr7.webp",
+        "available": true
+      },
+      {
         "id": "fmw6tpn70",
-        "name": "My Little pony ",
+        "name": "My Little pony | impermeable",
         "img": "img/subida-mw6trlq0-e9ip.webp",
         "available": true
       },
